@@ -50,31 +50,9 @@ st.caption("<center> Что такое эксгаустер агломашины
 st.write("Маппинг сигналов эксгаустеров")
 col1, col2, col3, col4 = st.columns(4)
 exhauster_names = col1.radio("Эксгаустер", options=df['exhauster_name'].unique(), index=0)
-with col2.expander('Сигнал'):
-    signal_name_0 = st.checkbox('Температура нагрева', disabled=True)
-    signal_name_1 = st.checkbox('Вибрация')
-    signal_name_2 = st.checkbox('Масло')
-    signal_name_3 = st.checkbox('Вода')
-with col2.expander('Показатель'):
-    mark_names_0 = st.checkbox('Температура', disabled=True)
-    mark_names_1 = st.checkbox('Уставки')
-    mark_names_2 = st.checkbox('Осевая')
-    mark_names_3 = st.checkbox('Горизонтальная')
-    mark_names_4 = st.checkbox('Вертикальная')
-with col3.expander('Механизм'):    
-    mechanism_names = st.multiselect('', df['mechanism_name'].unique(), default=df['mechanism_name'].unique()[:4])
-with col3.expander('Узмерение'):
-    measuring_names = st.multiselect('', df['measuring_name'].unique(), default=df['measuring_name'].unique()[:4])
-signal_names = [signal for signal in [signal_name_0, signal_name_1, signal_name_2, signal_name_3] if signal == True]
-st.write(signal_names)
-mark_names = [mark for mark in [mark_names_0, mark_names_1, mark_names_2, mark_names_3, mark_names_4] if mark == True]
 if exhauster_names: 
     index_exhauster_names = np.where(df['exhauster_name'] == exhauster_names)
-    index_mechanism_names = np.where(df['mechanism_name'].isin(mechanism_names))
-    index_signal_names = np.where(df['signal_name'].isin(signal_names))
-    index_mark_names = np.where(df['mark_name'].isin(mark_names))
-    index_measuring_names = np.where(df['measuring_name'].isin(measuring_names))
-    index_filter = set(index_exhauster_names[0]) & set(index_mechanism_names[0]) & set(index_signal_names[0]) & set(index_mark_names[0]) &set(index_measuring_names[0])
+    index_filter = set(index_exhauster_names[0])
     df_plot = df.iloc[list(index_filter)]
     st.write(df_plot)
 
