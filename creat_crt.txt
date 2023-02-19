@@ -1,0 +1,1 @@
+mkdir $HOME\.kafka; curl.exe -o $HOME\.kafka\YandexCA.crt https://storage.yandexcloud.net/cloud-certs/CA.pem
