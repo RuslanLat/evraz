@@ -13,19 +13,19 @@ col1.write("""<p><img src="https://www.tadviser.ru/images/f/f1/EVRAZ_Logo_2022.p
 col2.write("""<h2 align="center"> Интерфейс доступа к данным состояния эксгаустеров агломашины </h2>""", unsafe_allow_html=True)
 
 @st.cache
-def to_excel(df):
+#def to_excel(df):
     
-    output = BytesIO()
-    writer = pd.ExcelWriter(output, engine='xlsxwriter')
-    df.to_excel(writer, index=False, sheet_name='SQL Query')
-    workbook = writer.book
-    worksheet = writer.sheets['SQL Query']
-    format1 = workbook.add_format({'num_format': '0.00'}) 
-    worksheet.set_column('A:A', None, format1)  
-    writer.save()
-    processed_data = output.getvalue()
+#    output = BytesIO()
+#    writer = pd.ExcelWriter(output, engine='xlsxwriter')
+#    df.to_excel(writer, index=False, sheet_name='SQL Query')
+#    workbook = writer.book
+#    worksheet = writer.sheets['SQL Query']
+#    format1 = workbook.add_format({'num_format': '0.00'}) 
+#    worksheet.set_column('A:A', None, format1)  
+#    writer.save()
+#    processed_data = output.getvalue()
     
-    return processed_data
+#    return processed_data
 
 def to_csv(df):
 
@@ -67,14 +67,14 @@ if query.split()[0].lower() == 'select':
     #st.markdown("<h3 style='text-align: left; color: blac;'> Результат запроса </h3>", unsafe_allow_html=True)
     df = pd.DataFrame(rows, columns=[_.name for _ in cursor.description])
     #st.write(df, height=200)
-    df_xlsx = to_excel(df)
+    #df_xlsx = to_excel(df)
     df_csv = to_excel(df)
     
     col1, col2 = st.columns([5,1])
     col1.markdown("<h4 style='text-align: left; color: blac;'> Результат запроса </h4>", unsafe_allow_html=True)
     col1.write(df, height=200)
     col2.markdown("<h4 style='text-align: left; color: blac;'> Экспорт данных </h4>", unsafe_allow_html=True)
-    col2.download_button(label='XLSX', data=df_xlsx, file_name='sql_query.xlsx')
+    #col2.download_button(label='XLSX', data=df_xlsx, file_name='sql_query.xlsx')
     col2.download_button(label='CSV', data=df_csv, file_name='large_df.csv', mime='text/csv')
 
 else:
