@@ -68,7 +68,7 @@ if query.split()[0].lower() == 'select':
     df = pd.DataFrame(rows, columns=[_.name for _ in cursor.description])
     #st.write(df, height=200)
     #df_xlsx = to_excel(df)
-    df_csv = to_excel(df)
+    df_csv = to_csv(df)
     
     col1, col2 = st.columns([5,1])
     col1.markdown("<h4 style='text-align: left; color: blac;'> Результат запроса </h4>", unsafe_allow_html=True)
