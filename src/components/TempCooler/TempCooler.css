@@ -1,0 +1,33 @@
+.TempCooler_box {
+    width: 56px;
+    height: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 6px;
+    background-color: #414F4F;
+    border-radius: 4px;
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    position: relative;
+}
+.tWaterBeforeCooler {
+    bottom: 928px;
+    left: 278px;
+}
+.tWaterAfterCooler {
+    bottom: 955px;
+    left: 355px;
+}
+.tOilBeforeCooler {
+    bottom: 900px;
+    left: 206px;
+}
+.tOilAfterCooler {
+    bottom: 859px;
+    left: 317px;
+}

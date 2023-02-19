@@ -1,0 +1,38 @@
+.box {
+    position: relative;
+    width: 110px;
+    border-radius: 10px;
+    background-color: #414F4F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    font-style: normal;
+    color: #FFFFFF;
+    font-family: 'GT Eesti Pro Display';
+    font-weight: 500;
+    padding: 10px;
+}
+.box_title {
+    padding: 2px 0;
+    border: 1px solid #8D9595;
+    width: 100%;
+    text-align: center;
+}
+.box_values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 5px;
+    width: 100%;
+}
+.warning {
+    background-color:#FAB82E;
+    margin-top: 5px;
+    border-radius:4px;
+}
+.danger {
+    background: #EB5835;
+    margin-top: 5px;
+    border-radius:4px;
+}

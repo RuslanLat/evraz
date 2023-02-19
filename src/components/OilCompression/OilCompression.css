@@ -1,0 +1,32 @@
+.OilCompression_wrapper {
+    position: relative;
+    bottom:578px;
+    left: 489px;
+    width: 204px;
+    height: 31px;
+    background-color: #EFF2F6;
+}
+.OilCompression_fill {
+    width: 100%;
+    height: 100%;
+    font-family: 'GT Eesti Pro Text';   
+    font-size: 13px;
+    background-color: rgb(41, 169, 41);
+}
+.OilCompression_fill_text {
+    font-family: 'GT Eesti Pro Text';   
+    font-size: 10px;
+    position: relative;
+    left: 3px;
+    bottom:18px;
+}
+.warning {
+    background-color:#FAB82E;
+    margin-top: 5px;
+    border-radius:4px;
+}
+.danger {
+    background: #EB5835;
+    margin-top: 5px;
+    border-radius:4px;
+}

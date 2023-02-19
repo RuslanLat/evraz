@@ -1,0 +1,22 @@
+.OilTank_wrapper {
+    width: 167px;
+    height: 29px;
+    position: relative;
+    bottom: 644px;
+    left: 54px;
+    background-color: #EFF2F6;
+}
+.OilTank_fill {
+    width: 100%;
+    background-color: rgb(41, 169, 41);
+    height: 100%;
+    font-family: 'GT Eesti Pro Text';   
+    font-size: 13px;
+}
+.OilTank_fill_text {
+    font-family: 'GT Eesti Pro Text';   
+    font-size: 10px;
+    position: relative;
+    left: 3px;
+    bottom:18px;
+}

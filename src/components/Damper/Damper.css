@@ -1,0 +1,30 @@
+.dumper {
+    position: relative;
+    bottom: 459px;
+    right: 297px;
+    /* right: 368px; */
+}
+
+.line {
+    width: 84px;
+    height: 13px;
+    background-color: #4A8F40;
+}
+.line_y {
+    height: 12px;
+    background-color: #4A8F40;
+    width: 30px;
+    rotate: 271deg;
+    position: relative;
+    bottom: 12px;
+    left: 64px;
+}
+.dumper_percent {
+    position: relative;
+    bottom: 510px;
+    right: 300px;
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 375;
+    font-size: 13px;
+}

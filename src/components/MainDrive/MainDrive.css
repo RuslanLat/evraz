@@ -1,0 +1,48 @@
+.MainDrive_wrapper {
+    width: 207px;
+    height: 135px;
+    position: relative;
+    bottom:558px;
+    left: 276px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #E8EAEA;
+    border: 2px solid #8D9595;
+    border-radius: 10px;
+}
+.MainDrive_title {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 375;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.MainDrive_values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.MainDrive_values_elem_value {
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 6px;
+    background-color: #414F4F;
+    border-radius: 4px;
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}

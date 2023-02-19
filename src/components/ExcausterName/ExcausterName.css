@@ -1,0 +1,22 @@
+.excausterName_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 1280px;
+    height: 40px;
+}
+.excausterName_box {
+    width: 15px;
+    height: 15px;
+    background-color: #FAB82E;
+    padding: 8px;
+    border: 1px solid #FAB82E;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    /* text-align: center;
+    vertical-align: middle; */
+}

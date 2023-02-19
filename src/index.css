@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Display';
+  src: local('GT Eesti Pro Display'),
+       url('../fonts/GTEestiProDisplay-Medium.ttf') format('truetype'),
+       url('../fonts/GTEestiProDisplay-Medium.eot') format('embedded-opentype'),
+       url('../fonts/GTEestiProDisplay-Medium.woff') format('woff'); 
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Text';
+  src: local('GT Eesti Pro Text'),
+       url('../fonts/GTEestiProText-Medium.ttf') format('truetype'),
+       url('../fonts/GTEestiProText-Medium.eot') format('embedded-opentype'),
+       url('../fonts/GTEestiProText-Medium.woff') format('woff'); 
+  font-weight: 500;
+  font-style: normal;
+}

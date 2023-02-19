@@ -1,0 +1,70 @@
+.TempGasWrapper_main {
+    position: relative;
+    bottom: 510px;
+    right: 375px;
+    width: 167px;
+    height: 82px;
+    background-color: #B3B9B9;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items:center
+}
+.TempGasWrapper {
+    width: 141px;
+    height: 36px;
+    border: 2px solid #8D9595;
+    background-color: #EFF2F6;
+    border-radius: 2px;
+    /* position: relative; */
+    padding: 3px;
+}
+.TempGasFill {
+    width: 100%;
+    height: 26px;
+    background-color: #B3B9B9;
+    font-family: 'GT Eesti Pro Text';
+    font-size: 13px;
+    padding-left: 3px;
+}
+.TempGasFill_text {
+    font-family: 'GT Eesti Pro Text';
+    font-size: 10px;
+    position: relative;
+    left: 3px;
+    bottom:18px;
+}
+.wrapper2 {
+    width: 100%;
+}
+.tempGas_values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    width: 150px;
+    margin-bottom: 4px;
+}
+.tempGas_elem_title {
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.tempGas_elem_value {
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 6px;
+    background-color: #414F4F;
+    border-radius: 4px;
+    font-family: 'GT Eesti Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
